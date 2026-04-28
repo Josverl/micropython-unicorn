@@ -28,8 +28,7 @@
 
 #include "py/obj.h"
 #include "modmachine.h"
-#include "extmod/machine_mem.h"
-#include "extmod/machine_i2c.h"
+#include "extmod/modmachine.h"
 
 #if MICROPY_PY_MACHINE
 

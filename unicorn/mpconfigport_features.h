@@ -24,6 +24,8 @@
 #define MICROPY_PY_COLLECTIONS              (1)
 #define MICROPY_PY_MATH                     (1)
 #define MICROPY_PY_MACHINE                  (1)
+#define MICROPY_PY_MACHINE_I2C              (1)
+#define MICROPY_PY_TIME                     (1)
 #define MICROPY_LONGINT_IMPL                (MICROPY_LONGINT_IMPL_MPZ)
 #define MICROPY_FLOAT_IMPL                  (MICROPY_FLOAT_IMPL_FLOAT)
 
