@@ -25,8 +25,15 @@
 #define MICROPY_PY_MATH                     (1)
 #define MICROPY_PY_MACHINE                  (1)
 #define MICROPY_PY_MACHINE_I2C              (1)
+#define MICROPY_PY_SYS_STDFILES             (0)
+#define MICROPY_PY_SYS_STDIO_BUFFER         (0)
 #define MICROPY_PY_TIME                     (1)
+#define MICROPY_PY_WEAKREF                  (0)
 #define MICROPY_LONGINT_IMPL                (MICROPY_LONGINT_IMPL_MPZ)
 #define MICROPY_FLOAT_IMPL                  (MICROPY_FLOAT_IMPL_FLOAT)
+
+#define MICROPY_CONFIG_ROM_LEVEL            (MICROPY_CONFIG_ROM_LEVEL_FULL_FEATURES)
+#define MICROPY_PY_FSTRINGS                 (1)
+#define MICROPY_PY_TSTRINGS                 (1)
 
 #include "mpconfigport.h"

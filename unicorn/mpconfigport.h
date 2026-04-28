@@ -1,3 +1,4 @@
+#include <limits.h>
 #include <stdint.h>
 
 // options to control how Micro Python is built
@@ -40,8 +41,11 @@
 // to print such value. So, we avoid int32_t and use int directly.
 #define UINT_FMT "%u"
 #define INT_FMT "%d"
+#define HEX_FMT "%x"
 typedef int mp_int_t; // must be pointer size
 typedef unsigned mp_uint_t; // must be pointer size
+
+#define MP_SSIZE_MAX INT_MAX
 
 typedef long mp_off_t;
 
