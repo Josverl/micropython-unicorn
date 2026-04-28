@@ -2,3 +2,6 @@
 ######################
 www-emu/build
 unicorn/build_*
+
+# Node dependencies
+node_modules/
