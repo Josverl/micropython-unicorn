@@ -1,0 +1,27 @@
+{
+  "name": "micropython-unicorn",
+  "version": "1.0.0",
+  "description": "MicroPython on Unicorn",
+  "main": "index.js",
+  "scripts": {
+    "build:firmware": "make -C unicorn CONFIG=minimal && make -C unicorn CONFIG=features && make -C unicorn CONFIG=pyboard",
+    "build:web": "make -C www-emu clean && make -C www-emu nogzip",
+    "pretest": "npm run build:firmware && npm run build:web",
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josverl/micropython-unicorn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Josverl/micropython-unicorn/issues"
+  },
+  "homepage": "https://github.com/Josverl/micropython-unicorn#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}
