@@ -28,8 +28,7 @@
 
 #include "py/obj.h"
 #include "modmachine.h"
-#include "extmod/machine_mem.h"
-#include "extmod/machine_i2c.h"
+#include "extmod/modmachine.h"
 
 #if MICROPY_PY_MACHINE
 
@@ -41,8 +40,10 @@ STATIC const mp_rom_map_elem_t machine_module_globals_table[] = {
     { MP_ROM_QSTR(MP_QSTR_mem32), MP_ROM_PTR(&machine_mem32_obj) },
 
     { MP_ROM_QSTR(MP_QSTR_Pin), MP_ROM_PTR(&machine_pin_type) },
-    #if MICROPY_PY_MACHINE_I2C
+    #if MICROPY_PY_MACHINE_SOFTI2C
     { MP_ROM_QSTR(MP_QSTR_SoftI2C), MP_ROM_PTR(&mp_machine_soft_i2c_type) },
+    #endif
+    #if MICROPY_PY_MACHINE_I2C
     { MP_ROM_QSTR(MP_QSTR_I2C), MP_ROM_PTR(&machine_i2c_type) },
     #endif
 };

@@ -2,6 +2,10 @@
 
 // options to control how Micro Python is built
 
+#ifndef STATIC
+#define STATIC static
+#endif
+
 #define MICROPY_QSTR_BYTES_IN_HASH  (1)
 #define MICROPY_ALLOC_PATH_MAX      (256)
 #define MICROPY_ALLOC_PARSE_CHUNK_INIT (16)

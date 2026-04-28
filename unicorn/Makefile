@@ -48,12 +48,16 @@ SRC_C = \
 	modmachine.c \
 	machine_pin.c \
 	machine_i2c.c \
+	extmod/machine_i2c.c \
+	extmod/machine_mem.c \
+	extmod/modtime.c \
 	modpyb.c \
 	pyb_led.c \
 	pyb_switch.c \
 	pyb_servo.c \
 	pyb_adc.c \
 	shared/libc/string0.c \
+	shared/libc/printf.c \
 	shared/readline/readline.c \
 	shared/runtime/interrupt_char.c \
 	shared/runtime/pyexec.c \
